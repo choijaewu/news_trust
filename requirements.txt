@@ -9,3 +9,4 @@ scikit-learn
 lxml
 beautifulsoup4
 requests
+nltk

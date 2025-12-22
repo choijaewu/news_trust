@@ -1,3 +1,4 @@
+import nltk
 import streamlit as st
 from emotion import emotion_analyze
 from clickbait_detector import BERTClickbaitDetector
@@ -5,6 +6,20 @@ import torch
 import torch.nn as nn
 import numpy as np
 import re
+
+@st.cache_resource
+def download_nltk_data():
+    try:
+        nltk.data.find('tokenizers/punkt')
+    except LookupError:
+        nltk.download('punkt')
+    try:
+        nltk.data.find('tokenizers/punkt_tab')
+    except LookupError:
+        nltk.download('punkt_tab')
+
+# 앱 시작 시 다운로드
+download_nltk_data()
 
 # 페이지 설정
 st.set_page_config(
