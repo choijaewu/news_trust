@@ -3,3 +3,4 @@ torch==2.5.0
 numpy==1.23.5
 newspaper3k==0.2.8
 transformers==4.30.0
+distutils
