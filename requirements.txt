@@ -1,5 +1,5 @@
 streamlit==1.49.1
 torch==2.5.0
 numpy>=1.26.0
-newspaper4k
+newspaper3k
 transformers==4.30.0 
