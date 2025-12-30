@@ -1,3 +1,5 @@
 clickbait_detector_bert1.pt filter=lfs diff=lfs merge=lfs -text
 fast_model.pt filter=lfs diff=lfs merge=lfs -text
 vocab.pt filter=lfs diff=lfs merge=lfs -text
+clickbait_detector_bert2 filter=lfs diff=lfs merge=lfs -text
+clickbait_detector_bert2.pt filter=lfs diff=lfs merge=lfs -text
